@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Przegladarka.exe" version="1.0.0.3" publicKeyToken="9405a7e7118054a5" language="pl" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="Revolution.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Przegladarka" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Przegladarka.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          Opcje manifestu kontroli konta użytkownika
+          Jeśli chcesz zmienić poziom kontroli konta użytkownika systemu Windows, zastąp węzeł 
+          requestedExecutionLevel jednym z następujących.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Jeśli chcesz użyć wirtualizacji plików i rejestru do celów zgodności wstecznej, 
+         usuń węzeł requestedExecutionLevel.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Przegladarka.exe" size="519184">
+      <assemblyIdentity name="Przegladarka" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>UuxE7Ii1/jNK0YRltLRO8tHByWB7uKQme4vYRE+2UWU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Przegladarka.exe.config" size="306">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>YKTP+38as9QZQjjVzYIrbYqkrfL/p5aI8po84GoTdgc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Revolution.ico" size="254014">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>bQgFYCv55ZncKqAGUXd5HqAt0QrEkWdsPo8RWryGmOE=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-V2O9V6T\Administrator" issuerKeyHash="8ac3291ade4c8bde25dc855a1192bd9c4b2ed409" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>LfUlPvMHiS3FreQMNhzAF6GUmf0RBG6c/fH+lrPxuB8=</DigestValue></Reference></SignedInfo><SignatureValue>WBc7OH17lDMLANClU57pU4YTjhobfWCHmUd5Xup8Vy3XmK+0zHjK69XtrZRRf+gSlrxP/+oEGqTD/H1Nr5sdQ9RfjJHR76lYb/UOuwRbLCVBBACuCKgvPYffJ7462cGxKT8LlGWyEj/7TM87o59CoYY/4pJ7QNpCcwju8149TJQ=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>uEDYaigHXlWueG/2kJoDBtYvJTRB0iSGXv2khRZxEhWqssqudPXOJCRT0lf4bCLL+B5RgMoTJ8Y3QJWHXV95NaoCQz1sgxcP6+Si6tPeplY9rGw+IysKRlg4gqTEOycOY0AImrRa8HNI5rdkeW8gtIIlnIujgcK8QtAvW6BbTt0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="1fb8f1b396fef1fd9c6e0411fd9994a117c01c360ce4adc52d8907f33e25f52d" Description="" Url=""><as:assemblyIdentity name="Przegladarka.exe" version="1.0.0.3" publicKeyToken="9405a7e7118054a5" language="pl" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-V2O9V6T\Administrator</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>ac5eocXfeSdhjTKPlprTxD4CLl8ljnSFuck8kdzQyUA=</DigestValue></Reference></SignedInfo><SignatureValue>Vg2m7+Mhs9bdlBgi/Ux8dMx0YslnT5otuIupAiaXvDWLg1yJonksrDfNFkYPaZ39r9Eiaa58Qk6sVxW4GZwwdk91iI1lyAtoYBIVMoxROQM/heV50RHtm2siz5+5caicfRoct/5UF/KnLzTMf4RNbg8qrHTF3npnkqj8x/1yx3Q=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>uEDYaigHXlWueG/2kJoDBtYvJTRB0iSGXv2khRZxEhWqssqudPXOJCRT0lf4bCLL+B5RgMoTJ8Y3QJWHXV95NaoCQz1sgxcP6+Si6tPeplY9rGw+IysKRlg4gqTEOycOY0AImrRa8HNI5rdkeW8gtIIlnIujgcK8QtAvW6BbTt0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIICDTCCAXagAwIBAgIQFnNhH5tsCrFE6ZD2TmeFMjANBgkqhkiG9w0BAQsFADBFMUMwQQYDVQQDHjoARABFAFMASwBUAE8AUAAtAFYAMgBPADkAVgA2AFQAXABBAGQAbQBpAG4AaQBzAHQAcgBhAHQAbwByMB4XDTIzMDMxMjE0NDEzNVoXDTI0MDMxMTIwNDEzNVowRTFDMEEGA1UEAx46AEQARQBTAEsAVABPAFAALQBWADIATwA5AFYANgBUAFwAQQBkAG0AaQBuAGkAcwB0AHIAYQB0AG8AcjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAuEDYaigHXlWueG/2kJoDBtYvJTRB0iSGXv2khRZxEhWqssqudPXOJCRT0lf4bCLL+B5RgMoTJ8Y3QJWHXV95NaoCQz1sgxcP6+Si6tPeplY9rGw+IysKRlg4gqTEOycOY0AImrRa8HNI5rdkeW8gtIIlnIujgcK8QtAvW6BbTt0CAwEAATANBgkqhkiG9w0BAQsFAAOBgQCXGwlWaMJrT0jefyGrYwPDUiQ/ZJ2BhFHJj36x0fZqZru72Zfg7EIWle1apWWRKbKum5o/3n6qldu0cO8UcwhZwgeyQ3u6QPSv1kuKpV1XNRL5h0k2hnWXQF22ZsQEWygmQ4/0N3fFrkCUjoNlEEVI1XveRL+W8MdPBEeiXyiDbA==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
